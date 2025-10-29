@@ -168,8 +168,8 @@
     .make-it-pc, .the-grid-pc {
         margin-right: 5vw;
     }
-    .deep-earth-pc h5, .night-arcade-pc h5, .soccer-team-pc h5, .the-grid-pc h5, .from-up-above-pc h5,
-    .pocket-borealis-pc h5, .the-curiosity-pc h5, .make-it-pc h5 {
+    .deep-earth-pc h3, .night-arcade-pc h3, .soccer-team-pc h3, .the-grid-pc h3, .from-up-above-pc h3,
+    .pocket-borealis-pc h3, .the-curiosity-pc h3, .make-it-pc h3 {
         position: relative;
         font-size: clamp(8px, 3vw, 35px);
     }
@@ -433,8 +433,8 @@
     .make-it-pc, .the-grid-pc {
         margin-right: 5vw;
     }
-    .deep-earth-pc h5, .night-arcade-pc h5, .soccer-team-pc h5, .the-grid-pc h5, .from-up-above-pc h5,
-    .pocket-borealis-pc h5, .the-curiosity-pc h5, .make-it-pc h5 {
+    .deep-earth-pc h3, .night-arcade-pc h3, .soccer-team-pc h3, .the-grid-pc h3, .from-up-above-pc h3,
+    .pocket-borealis-pc h3, .the-curiosity-pc h3, .make-it-pc h3 {
         position: relative;
         font-size: clamp(8px, 3vw, 35px);
     }
@@ -706,8 +706,8 @@ relaciona con la altura total tenemos que usar vh que es como un porcentaje del 
         transition: background-size 0.4s ease;
         z-index: 0;
     }
-    .small-deep-earth h5, .night-arcade h5, .soccer-team h5, .the-grid h5, .from-up-above h5,
-    .pocket-borealis h5, .the-curiosity h5, .make-it h5 {
+    .small-deep-earth h3, .night-arcade h3, .soccer-team h3, .the-grid h3, .from-up-above h3,
+    .pocket-borealis h3, .the-curiosity h3, .make-it h3 {
         position: relative;
         font-size: clamp(15px, 8vw, 50px);
         margin-left: 5%;
@@ -863,8 +863,8 @@ h1 {
 .the-curiosity, .make-it {
     text-decoration: none;
 }
-.small-deep-earth h5, .night-arcade h5, .soccer-team h5, .the-grid h5, .from-up-above h5,
-.pocket-borealis h5, .the-curiosity h5, .make-it h5 {
+.small-deep-earth h3, .night-arcade h3, .soccer-team h3, .the-grid h3, .from-up-above h3,
+.pocket-borealis h3, .the-curiosity h3, .make-it h3 {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
     color: #fff;
@@ -875,8 +875,8 @@ h1 {
 .the-curiosity:hover .overlay1, .make-it:hover .overlay1 {
     background: rgba(255, 255, 255, 0.6);
 }
-.small-deep-earth:hover h5, .night-arcade:hover h5, .soccer-team:hover h5, .the-grid:hover h5,
-.from-up-above:hover h5, .pocket-borealis:hover h5, .the-curiosity:hover h5, .make-it:hover h5 {
+.small-deep-earth:hover h3, .night-arcade:hover h3, .soccer-team:hover h3, .the-grid:hover h3,
+.from-up-above:hover h3, .pocket-borealis:hover h3, .the-curiosity:hover h3, .make-it:hover h3 {
     color: #000;
 }
 .see-pc-btn {
@@ -896,8 +896,8 @@ h1 {
 .the-curiosity-pc, .make-it-pc {
     text-decoration: none;
 }
-.deep-earth-pc h5, .night-arcade-pc h5, .soccer-team-pc h5, .the-grid-pc h5, .from-up-above-pc h5,
-.pocket-borealis-pc h5, .the-curiosity-pc h5, .make-it-pc h5 {
+.deep-earth-pc h3, .night-arcade-pc h3, .soccer-team-pc h3, .the-grid-pc h3, .from-up-above-pc h3,
+.pocket-borealis-pc h3, .the-curiosity-pc h3, .make-it-pc h3 {
     margin-left: 18%;
     margin-top: 26vw;
     font-weight: 100;
@@ -910,8 +910,8 @@ h1 {
 .the-curiosity-pc:hover .overlay2, .make-it-pc:hover .overlay2 {
     background: rgba(255, 255, 255, 0.6);
 }
-.deep-earth-pc:hover h5, .night-arcade-pc:hover h5, .soccer-team-pc:hover h5, .the-grid-pc:hover h5,
-.from-up-above-pc:hover h5, .pocket-borealis-pc:hover h5, .the-curiosity-pc:hover h5, .make-it-pc:hover h5 {
+.deep-earth-pc:hover h3, .night-arcade-pc:hover h3, .soccer-team-pc:hover h3, .the-grid-pc:hover h3,
+.from-up-above-pc:hover h3, .pocket-borealis-pc:hover h3, .the-curiosity-pc:hover h3, .make-it-pc:hover h3 {
     color: #000;
 }
 footer {
