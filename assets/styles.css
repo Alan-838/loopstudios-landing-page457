@@ -152,12 +152,15 @@
     }
     .deep-earth-pc, .night-arcade-pc, .soccer-team-pc, .the-grid-pc, .from-up-above-pc, .pocket-borealis-pc,
     .the-curiosity-pc, .make-it-pc {
+        position: relative;
+        display: block;
+        overflow: hidden;
         background-size: cover;
         background-repeat: no-repeat;
-        /* border: red solid; */
         aspect-ratio: 25.6/45;
         width: 20vw;
-        /* margin-left: 5vw; */
+        transition: background-size 0.4s ease;
+        z-index: 0;
     }
     .deep-earth-pc, .from-up-above-pc {
         margin-left: 5vw;
@@ -167,11 +170,36 @@
     }
     .deep-earth-pc h5, .night-arcade-pc h5, .soccer-team-pc h5, .the-grid-pc h5, .from-up-above-pc h5,
     .pocket-borealis-pc h5, .the-curiosity-pc h5, .make-it-pc h5 {
+        position: relative;
         font-size: clamp(8px, 3vw, 35px);
-        margin-left: 18%;
-        margin-top: 26vw;
-        font-weight: 100;
-        color: #fff;
+    }
+    /* Metodo 2 para que delante de la imagen aparezca un velo blanco y sobre este el texto resaltado en
+     negrita */
+    /* .deep-earth-pc::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 0, 0, 0.6); rojo visible para test
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: 1;
+    }
+    .deep-earth-pc:hover::after {
+        opacity: 1;
+    } */
+    .deep-earth-pc .overlay2, .night-arcade-pc .overlay2, .soccer-team-pc .overlay2, .the-grid-pc .overlay2,
+    .from-up-above-pc .overlay2, .pocket-borealis-pc .overlay2, .the-curiosity-pc .overlay2,
+    .make-it-pc .overlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255 , 255, 0);
+        z-index: 2;
     }
     .small-deep-earth, .night-arcade, .soccer-team, .the-grid, .from-up-above, .pocket-borealis,
     .the-curiosity, .make-it {
@@ -389,12 +417,15 @@
     }
     .deep-earth-pc, .night-arcade-pc, .soccer-team-pc, .the-grid-pc, .from-up-above-pc, .pocket-borealis-pc,
     .the-curiosity-pc, .make-it-pc {
+        position: relative;
+        display: block;
+        overflow: hidden;
         background-size: cover;
         background-repeat: no-repeat;
-        /* border: red solid; */
         aspect-ratio: 25.6/45;
         width: 20vw;
-        /* margin-left: 5vw; */
+        transition: background-size 0.4s ease;
+        z-index: 0;
     }
     .deep-earth-pc, .from-up-above-pc {
         margin-left: 5vw;
@@ -404,11 +435,19 @@
     }
     .deep-earth-pc h5, .night-arcade-pc h5, .soccer-team-pc h5, .the-grid-pc h5, .from-up-above-pc h5,
     .pocket-borealis-pc h5, .the-curiosity-pc h5, .make-it-pc h5 {
+        position: relative;
         font-size: clamp(8px, 3vw, 35px);
-        margin-left: 17%;
-        margin-top: 24vw;
-        font-weight: 100;
-        color: #fff;
+    }
+    .deep-earth-pc .overlay2, .night-arcade-pc .overlay2, .soccer-team-pc .overlay2, .the-grid-pc .overlay2,
+    .from-up-above-pc .overlay2, .pocket-borealis-pc .overlay2, .the-curiosity-pc .overlay2,
+    .make-it-pc .overlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255 , 255, 0);
+        z-index: 2;
     }
     .small-deep-earth, .night-arcade, .soccer-team, .the-grid, .from-up-above, .pocket-borealis,
     .the-curiosity, .make-it {
@@ -655,19 +694,36 @@ relaciona con la altura total tenemos que usar vh que es como un porcentaje del 
     }
     .small-deep-earth, .night-arcade, .soccer-team, .the-grid, .from-up-above, .pocket-borealis,
     .the-curiosity, .make-it {
+        position: relative;
+        /* El display block permite que el a se comporte como div */
+        display: block;
         background-size: cover;
         background-repeat: no-repeat;
-        /* border: red solid; */
         aspect-ratio: 65.4/24;
         width: 88%;
         margin: auto;
         margin-top: 5vw;
+        transition: background-size 0.4s ease;
+        z-index: 0;
     }
     .small-deep-earth h5, .night-arcade h5, .soccer-team h5, .the-grid h5, .from-up-above h5,
     .pocket-borealis h5, .the-curiosity h5, .make-it h5 {
+        position: relative;
         font-size: clamp(15px, 8vw, 50px);
         margin-left: 5%;
-        margin-top: 13vw;
+        padding-top: 13vw;
+        transition: 0.4s ease;
+        z-index: 2;
+    }
+    .small-deep-earth .overlay1, .night-arcade .overlay1, .soccer-team .overlay1, .the-grid .overlay1,
+    .from-up-above .overlay1, .pocket-borealis .overlay1, .the-curiosity .overlay1, .make-it .overlay1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0);
+        z-index: 1;
     }
     .mobile-btn-container {
         display: flex;
@@ -796,7 +852,6 @@ h1 {
     color: #fff;
     font-weight: 100;
     /* border: solid red; */
-
 }
 
 .nav-links {
@@ -804,12 +859,25 @@ h1 {
     list-style: none;
     justify-content: center;
 }
+.small-deep-earth, .night-arcade, .soccer-team, .the-grid, .from-up-above, .pocket-borealis,
+.the-curiosity, .make-it {
+    text-decoration: none;
+}
 .small-deep-earth h5, .night-arcade h5, .soccer-team h5, .the-grid h5, .from-up-above h5,
 .pocket-borealis h5, .the-curiosity h5, .make-it h5 {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
     color: #fff;
     /* border: blue solid; */
+}
+.small-deep-earth:hover .overlay1, .night-arcade:hover .overlay1, .soccer-team:hover .overlay1,
+.the-grid:hover .overlay1, .from-up-above:hover .overlay1, .pocket-borealis:hover .overlay1,
+.the-curiosity:hover .overlay1, .make-it:hover .overlay1 {
+    background: rgba(255, 255, 255, 0.6);
+}
+.small-deep-earth:hover h5, .night-arcade:hover h5, .soccer-team:hover h5, .the-grid:hover h5,
+.from-up-above:hover h5, .pocket-borealis:hover h5, .the-curiosity:hover h5, .make-it:hover h5 {
+    color: #000;
 }
 .see-pc-btn {
     font-family: "Alata", sans-serif;
@@ -824,18 +892,27 @@ h1 {
     background-color: #fff;
 }
 
-/* .deep-earth-pc h5, .night-arcade-pc h5, .soccer-team-pc h5, .the-grid-pc h5, .from-up-above-pc h5,
-    .pocket-borealis-pc h5, .the-curiosity-pc h5, .make-it-pc h5 */
-
-.deep-earth-pc {
+.deep-earth-pc, .night-arcade-pc, .soccer-team-pc, .the-grid-pc, .from-up-above-pc, .pocket-borealis-pc,
+.the-curiosity-pc, .make-it-pc {
     text-decoration: none;
 }
-.deep-earth-pc:hover {
-    opacity: 0.7;
-    color: black;
+.deep-earth-pc h5, .night-arcade-pc h5, .soccer-team-pc h5, .the-grid-pc h5, .from-up-above-pc h5,
+.pocket-borealis-pc h5, .the-curiosity-pc h5, .make-it-pc h5 {
+    margin-left: 18%;
+    margin-top: 26vw;
+    font-weight: 100;
+    color: #fff;
+    z-index: 3;
+    transition: color 0.4s ease;
 }
-.deep-earth-pc h5:hover {
-    
+.deep-earth-pc:hover .overlay2, .night-arcade-pc:hover .overlay2, .soccer-team-pc:hover .overlay2,
+.the-grid-pc:hover .overlay2, .from-up-above-pc:hover .overlay2, .pocket-borealis-pc:hover .overlay2,
+.the-curiosity-pc:hover .overlay2, .make-it-pc:hover .overlay2 {
+    background: rgba(255, 255, 255, 0.6);
+}
+.deep-earth-pc:hover h5, .night-arcade-pc:hover h5, .soccer-team-pc:hover h5, .the-grid-pc:hover h5,
+.from-up-above-pc:hover h5, .pocket-borealis-pc:hover h5, .the-curiosity-pc:hover h5, .make-it-pc:hover h5 {
+    color: #000;
 }
 footer {
     background-color: #000;
